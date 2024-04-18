@@ -9,4 +9,4 @@
 > - Implement number of key stroke accomplishments. (ie. 500 keystrokes plays a "SHEESH" sound)
 > - Add key stroke sounds.
 
-## [Live Demo](https://ela-codes.github.io/deez_keebs/)
+## [Live Demo](https://hyperwoo.github.io/Check-your-keyboard/)
