@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Key Checker</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="header">Keyboard Checker</div>
+
+      <div class="keyboardAccess">
+        <button id="requestButton">Request USB Device Access</button>
+        <div class="keyboardName">Current Keyboard:</div>
+        <div class="keyPressCounter">Key press counter:</div>
+      </div>
+
+      <div class="keyboard">
+        <div class="container function-qwerty-container">
+          <div class="first-row function-qwerty">
+            <span class="key Escape">Esc</span>
+
+            <span class="key F1">F1</span>
+            <span class="key F2">F2</span>
+            <span class="key F3">F3</span>
+            <span class="key F4">F4</span>
+
+            <span class="key F5">F5</span>
+            <span class="key F6">F6</span>
+            <span class="key F7">F7</span>
+            <span class="key F8">F8</span>
+
+            <span class="key F9">F9</span>
+            <span class="key F10">F10</span>
+            <span class="key F11">F11</span>
+            <span class="key F12">F12</span>
+
+          </div>
+          <div class="sec-row function-qwerty">
+            <span class="key Backquote">`<br />~</span>
+            <span class="key Digit1">!<br />1</span>
+            <span class="key Digit2">@<br />2</span>
+            <span class="key Digit3">#<br />3</span>
+            <span class="key Digit4">$<br />4</span>
+            <span class="key Digit5">%<br />5</span>
+            <span class="key Digit6">^<br />6</span>
+            <span class="key Digit7">&<br />7</span>
+            <span class="key Digit8">*<br />8</span>
+            <span class="key Digit9">(<br />9</span>
+            <span class="key Digit0">)<br />0</span>
+            <span class="key Minus">_<br />-</span>
+            <span class="key Equal">+<br />=</span>
+            <span class="key Backspace medium-modifier">Backspace</span>
+          </div>
+          <div class="third-row function-qwerty">
+            <span class="key Tab small-modifier">Tab</span>
+            <span class="key KeyQ">Q</span>
+            <span class="key KeyW">W</span>
+            <span class="key KeyE">E</span>
+            <span class="key KeyR">R</span>
+            <span class="key KeyT">T</span>
+            <span class="key KeyY">Y</span>
+            <span class="key KeyU">U</span>
+            <span class="key KeyI">I</span>
+            <span class="key KeyO">O</span>
+            <span class="key KeyP">P</span>
+            <span class="key BracketLeft">{<br />[</span>
+            <span class="key BracketRight">}<br />]</span>
+            <span class="key Backslash small-modifier">|<br />\</span>
+          </div>
+          <div class="fourth-row function-qwerty">
+            <span class="key CapsLock medium-modifier">Caps Lock</span>
+            <span class="key KeyA">A</span>
+            <span class="key KeyS">S</span>
+            <span class="key KeyD">D</span>
+            <span class="key KeyF">F</span>
+            <span class="key KeyG">G</span>
+            <span class="key KeyH">H</span>
+            <span class="key KeyJ">J</span>
+            <span class="key KeyK">K</span>
+            <span class="key KeyL">L</span>
+            <span class="key Semicolon">: <br /> ;</span>
+            <span class="key Quote">" <br />'</span>
+            <span class="key Enter medium1-modifier">Enter</span>
+          </div>
+          <div class="fifth-row function-qwerty">
+            <span class="key ShiftLeft medium2-modifier">Shift</span>
+            <span class="key KeyZ">Z</span>
+            <span class="key KeyX">X</span>
+            <span class="key KeyC">C</span>
+            <span class="key KeyV">V</span>
+            <span class="key KeyB">B</span>
+            <span class="key KeyN">N</span>
+            <span class="key KeyM">M</span>
+            <span class="key Comma">< <br /> ,</span>
+            <span class="key Period">> <br /> .</span>
+            <span class="key Slash">? <br /> /</span>
+            <span class="key ShiftRight medium3-modifier">Shift</span>
+          </div>
+          <div class="sixth-row function-qwerty">
+            <span class="key ControlLeft small-modifier">Control</span>
+            <span class="key MetaLeft small-modifier">Windows</span>
+            <span class="key AltLeft small-modifier">Alt</span>
+            <span class="key Space large-modifier"></span>
+            <span class="key AltRight small-modifier">Alt</span>
+            <span class="key ControlRight small-modifier">Control</span>
+            <span class="key Fn small1-modifier">Fn</span>
+
+          </div>
+        </div>
+
+        <div class="container navigation-container">
+          <div class="first-row navigation">
+            <span class="key PrintScreen">Print</span>
+            <span class="key ScrollLock">Scroll</span>
+            <span class="key Pause">Pause</span>
+          </div>
+          <div class="sec-row navigation">
+            <span class="key Insert">Insert</span>
+            <span class="key Home">Home</span>
+            <span class="key PageUp">Page <br />Up</span>
+          </div>
+          <div class="third-row navigation">
+            <span class="key Delete">Delete</span>
+            <span class="key End">End</span>
+            <span class="key PageDown">Page <br />Down</span>
+          </div>
+
+          <div class="fifth-row arrows">
+            <span class="key ArrowUp">&#8593;</span>
+          </div>
+          <div class="sixth-row arrows">
+            <span class="key ArrowLeft">&#8592;</span>
+            <span class="key ArrowDown">&#8595;</span>
+            <span class="key ArrowRight">&#8594;</span>
+          </div>
+
+        </div>
+
+        <div class="container numpad-container">
+          <div class="first-row"><span></span></div>
+          <div class="sec-row numpad">
+            <span class="key NumLock">Num Lock</span>
+            <span class="key NumpadDivide">/</span>
+            <span class="key NumpadMultiply">*</span>
+            <span class="key NumpadSubtract">-</span>
+          </div>
+          <div class="third-row numpad">
+            <span class="key Numpad7">7</span>
+            <span class="key Numpad8">8</span>
+            <span class="key Numpad9">9</span>
+            <span class="key NumpadAdd">+</span>
+          </div>
+          <div class="fourth-row numpad">
+            <span class="key Numpad4">4</span>
+            <span class="key Numpad5">5</span>
+            <span class="key Numpad6">6</span>
+          </div>
+          <div class="fifth-row numpad">
+            <span class="key Numpad1">1</span>
+            <span class="key Numpad2">2</span>
+            <span class="key Numpad3">3</span>
+            <span class="key NumpadEnter">Enter</span>
+          </div>
+          <div class="sixth-row numpad">
+            <span class="key Numpad0">0</span>
+            <span class="key NumpadDecimal">.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">by <a href="https://github.com/HyperWoo">Harsh Kumar</a></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
