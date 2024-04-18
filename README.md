@@ -1,4 +1,4 @@
-# Deez Keebs (A keyboard key checker)
+# Check your Keys (A keyboard key checker web application)
 ## Description
 > Press a key to make sure that your keys work. 
 > Best used by keyboard enthusiasts who enjoy modding keyboards. 
